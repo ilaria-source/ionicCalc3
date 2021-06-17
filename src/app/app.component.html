@@ -12,7 +12,14 @@
               <ion-label>{{ p.title }}</ion-label>
             </ion-item>
           </ion-menu-toggle> -->
-          <p *ngFor="let item of dataCalcList"> {{item.typeCalc}} | {{item.active}}</p>
+
+          <ion-menu-toggle auto-hide="false" *ngFor="let item of dataCalcList" [ngStyle]="{color: item.active === false ? '#7373a5':'#000000'}">
+            <ion-item routerDirection="root" [routerLink]="[item.url]" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon slot="start" [ios]="item.icon + '-outline'" [md]="item.icon + '-sharp'"></ion-icon>
+              <ion-label> {{item.typeName}}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
 
         </ion-list>
       </ion-content>

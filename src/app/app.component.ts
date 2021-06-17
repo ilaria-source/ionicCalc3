@@ -15,9 +15,7 @@ export class AppComponent  {
   //   { title: 'Programmatore', url: '', icon: 'save' }, //  /programmer/Programmer
   // ];
 
-  // @Input() typeCalc: TypeCalc = { typeName: TypeCalc, active : boolean };
-  dataCalcList: {typeCalc: TypeCalc; active: boolean}[] = dataCalc;
-
+  dataCalcList: {typeName: TypeCalc; url: string; icon: string; active: boolean}[] = dataCalc;
 
 
   constructor() {}
