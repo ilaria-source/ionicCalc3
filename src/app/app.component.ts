@@ -1,6 +1,8 @@
 import { TypeCalc } from './folder/models/enums/typeCalculator.model';
 import { Component, Input } from '@angular/core';
 import { FolderPage  } from './folder/folder.page';
+import dataCalc from './folder/repositories/data_repositories.json';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -14,7 +16,7 @@ export class AppComponent  {
   // ];
 
   // @Input() typeCalc: TypeCalc = { typeName: TypeCalc, active : boolean };
-  @Input() typeCalc: TypeCalc;
+  dataCalcList: {typeCalc: TypeCalc; active: boolean}[] = dataCalc;
 
 
 

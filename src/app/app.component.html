@@ -5,14 +5,14 @@
         <ion-list id="inbox-list">
           <ion-list-header>Calcolatrice</ion-list-header>
           <ion-note>selezionare la modalità</ion-note>
- 
+
           <!-- <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
               <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
               <ion-label>{{ p.title }}</ion-label>
             </ion-item>
           </ion-menu-toggle> -->
-
+          <p *ngFor="let item of dataCalcList"> {{item.typeCalc}} | {{item.active}}</p>
 
         </ion-list>
       </ion-content>

@@ -1,0 +1,14 @@
+[
+  {
+    "typeName": "classic",
+    "active": true
+  },
+  {
+    "typeName": "scientific",
+    "active": false
+  },
+  {
+    "typeName": "programmer",
+    "active": false
+  }
+]
