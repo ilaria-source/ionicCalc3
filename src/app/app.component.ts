@@ -1,6 +1,8 @@
-import { TypeCalc } from './folder/models/enums/typeCalculator.model';
+
 import { Component, Input } from '@angular/core';
+import { ClassicModePage } from './classic-mode/classic-mode.page';
 import { FolderPage  } from './folder/folder.page';
+import { TypeCalc } from './folder/models/enums/typeCalculator.model';
 import dataCalc from './folder/repositories/data_repositories.json';
 
 @Component({
@@ -9,15 +11,11 @@ import dataCalc from './folder/repositories/data_repositories.json';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent  {
-  // public appPages = [ //qua richiama il model che darà i dati contenuti in enum
-  //   { title: 'Classica', url: '/classic/Classic', icon: 'bug' },
-  //   { title: 'Scientifica', url: '', icon: 'construct' }, // /scientific/Scientific
-  //   { title: 'Programmatore', url: '', icon: 'save' }, //  /programmer/Programmer
-  // ];
-
+//vedilo come il main (c#)
   dataCalcList: {typeName: TypeCalc; url: string; icon: string; active: boolean}[] = dataCalc;
 
+  // classicCalculator: ClassicModePage;
 
   constructor() {}
 }
-//vedilo come il main (c#)
+

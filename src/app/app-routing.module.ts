@@ -7,13 +7,14 @@ const routes: Routes = [
     redirectTo: 'folder/Inbox',
     pathMatch: 'full'
   },
+  // {
+  //   path: 'folder/:id',
+  //   loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  // },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
-  },
-  {
-    path: 'classic-mode',
-    loadChildren: () => import('./classic-mode/classic-mode.module').then( m => m.ClassicModePageModule)
+    path: 'classic',
+    loadChildren: () =>
+    import('./classic-mode/classic-mode.module').then( m => m.ClassicModePageModule)
   }
 ];
 

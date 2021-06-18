@@ -8,7 +8,6 @@ import { Component, OnInit, Output } from '@angular/core';
 })
 export class ClassicModePage implements OnInit {
 
-
   //blocco logica calcolatrice preso da quella già funzionante
 
   subText = '';
@@ -81,8 +80,6 @@ export class ClassicModePage implements OnInit {
     }
     this.answered = true;
   }
-
-
 
   ngOnInit() {
   }

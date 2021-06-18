@@ -1,8 +1,5 @@
-import { CalcolatorType } from './models/calcolator';
-
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-
 
 @Component({
   selector: 'app-folder',
@@ -11,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class FolderPage implements OnInit {
 
-  @Output() typeCalc = new EventEmitter<CalcolatorType>() ;
+
 
   public folder: string;
 
