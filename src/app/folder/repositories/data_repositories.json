@@ -1,7 +1,7 @@
 [
   {
     "typeName": "classic",
-    "url": "/classic-mode/classic-mode",
+    "url": "/classic-mode/classic-mode.page",
     "icon": "bug" ,
     "active": true
   },

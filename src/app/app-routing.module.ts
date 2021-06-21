@@ -12,7 +12,7 @@ const routes: Routes = [
   //   loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   // },
   {
-    path: 'classic',
+    path: 'folder/classic',
     loadChildren: () =>
     import('./classic-mode/classic-mode.module').then( m => m.ClassicModePageModule)
   }
